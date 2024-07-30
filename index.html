@@ -3,36 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AntonioMaggi</title>
+    <title>Antonio Maggi | Full Stack</title>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png" type="image/png">
 </head>
 <body>
     <header>
-        <div class="container gray highlightTextIn"></div>
-        <h1>Welcome to My Portfolio</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+        <h1 class="logo"><a href="#"><img src="logo.png" alt="AM"></a></h1>
+        <div class="container gray highlightTextIn navbar">
+            <a alt="ABOUT" href="#about">ABOUT</a>
+            <a alt="PORTFOLIO" href="#projects">PORTFOLIO</a>
+            <a alt="CONTACT" href="#contact">CONTACT</a>
         </div>
     </header>
     <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Lorem Ipsum</p>
+        <section id="introduction">
+            <div class="introduction">
+                <h1 class="heading-primary">Hey, I'm Antonio Maggi</h1>
+                <p><span id="dynamic-text">Software</span> Developer building and managing Websites and Web Applications. Passionate about clean code and continuously learning in the tech field.</p>
+            </div>
         </section>
+        <section id="about">
+            <div class="about-container">
+                <div class="about-content">
+                    <h2>About Me</h2>
+                    <p>Welcome to my personal website! I am a passionate software developer specializing in PHP/Laravel, JavaScript/Angular, and MySQL. With a strong foundation in relational databases, I enjoy crafting efficient and scalable web applications. My journey in the tech world has been driven by a relentless curiosity and a commitment to continuous learning. Each project I undertake is an opportunity to hone my skills and embrace new technologies, ensuring that I remain at the forefront of industry trends and best practices.<br><br>
+        
+                    I am always eager to connect with fellow professionals, collaborate on innovative projects, and explore new opportunities. Whether you're looking for a dedicated developer to bring your ideas to life, or just want to discuss the latest in web development, I am open to networking and building meaningful connections. Feel free to reach out to me – let’s create something amazing together!</p>
+                </div>
+                <div class="technologies-content">
+                    <h2>My Technologies</h2>
+                    <div class="technologies">
+                        <i class="devicon-php-plain" style="font-size: 5rem;"></i>
+                        <i class="devicon-laravel-original-wordmark" style="font-size: 5rem;"></i>
+                        <i class="devicon-javascript-plain" style="font-size: 4rem;"></i>
+                        <i class="devicon-angular-plain" style="font-size: 5rem;"></i>
+                        <i class="devicon-typescript-plain" style="font-size: 4rem;"></i>
+                        <i class="devicon-mysql-plain-wordmark" style="font-size: 5rem;"></i>
+                        <i class="devicon-html5-plain-wordmark" style="font-size: 5rem;"></i>
+                        <i class="devicon-css3-plain-wordmark" style="font-size: 5rem;"></i>
+                        <i class="devicon-tailwindcss-plain-wordmark" style="font-size: 5rem;"></i>
+                        <i class="devicon-bootstrap-plain" style="font-size: 5rem;"></i>
+                        <i class="devicon-mongodb-plain-wordmark" style="font-size: 5rem;"></i>
+                        <i class="devicon-postman-plain-wordmark" style="font-size: 5rem;"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <section id="projects">
             <h2>Projects</h2>
-            <div id="project-list"></div>
-        </section>
+            <div id="project-list" class="project-list"></div>
+        </section>        
         <section id="contact">
             <h2>Contact</h2>
-            <p>You can contact me at maggia1013[at]gmail.com</a>.</p>
+            <p>You can contact me at maggia1013[at]gmail.com or use the form below:</p>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+            <p id="form-status"></p>
         </section>
+        
     </main>
     <script src="script.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        emailjs.init('7icVIz4A-KA5iztgU');
+    </script>
 </body>
 </html>
