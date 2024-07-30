@@ -45,4 +45,4 @@ document.addEventListener('DOMContentLoaded', function() {
                     status.textContent = 'Error sending message. Please try again.';
                 });
         });
-});
+}); 
