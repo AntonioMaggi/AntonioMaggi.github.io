@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Project List Generation
     const projects = [
-        { name: 'Webshop', description: '*Currently working on a dynamic webshop template in Angular*', link: 'https://github.com/AntonioMaggi/webshop' },
+        { name: 'Webshop', description: '*Currently working on a dynamic webshop template in Angular, NodeJS, MariaDB*', link: 'https://github.com/AntonioMaggi/webshop' },
         { name: 'Squad Scope', description: 'Squad Scope, built with Laravel, is a PUBG squad statistics and analytics application. It helps you dive deep into match analysis, assess individual and team stats, and utilize tactical tools to craft winning strategies. Improve your chances of victory and become PUBG champions with our app!', link: 'https://github.com/AntonioMaggi/squadscope' },
         { name: 'ParGent', description: 'Welcome to ParGent, created with Javascript, an innovative solution designed to make parking in Ghent easier. This project is the first step towards our vision for CyberGent 2077, an integrated digital service platform for the residents and visitors of Ghent.', link: 'https://github.com/AntonioMaggi/parkingent' },
         { name: 'Dynamic Menu', description: 'Dynamic Menu is a Laravel-based project that facilitates the creation and management of dynamic menus in web applications. This tool allows users to easily configure menus that can adapt to various requirements and contexts within an application.', link: 'https://github.com/AntonioMaggi/dynamicMenu' }
