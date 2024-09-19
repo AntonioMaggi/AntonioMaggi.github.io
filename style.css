@@ -280,11 +280,28 @@ form button:hover {
 }
 
 .linkedin-btn {
-    background-color: #333;
+    background-color: #717171;
+}
+
+.linkedin-btn:hover {
+    background-color: #3B3A3A;
 }
 
 .github-btn {
-    background-color: #333;
+    background-color: #717171;
+}
+
+.github-btn:hover {
+    background-color: #3B3A3A;
+}
+
+.project-btn {
+    background-color: #717171;
+    color: white !important;
+}
+
+.project-btn:hover {
+    background-color: #3B3A3A;
 }
 
 .btn img {
@@ -372,4 +389,18 @@ footer p {
   ::-webkit-scrollbar-thumb:hover {
     background-color: #555; 
   }
-  
+
+  body, button, a {
+    cursor: none !important;
+}
+
+#custom-cursor {
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    z-index: 9999;
+    transition: transform 0.2s ease-out;
+}

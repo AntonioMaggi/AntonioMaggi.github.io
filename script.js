@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         projectDiv.innerHTML = `
             <h3>${project.name}</h3>
             <p>${project.description}</p>
-            <a href="${project.link}" target="_blank">View Project</a>
+            <a href="${project.link}" target="_blank" class="btn project-btn">View Project</a>
         `;
         projectList.appendChild(projectDiv);
     });
@@ -46,4 +46,26 @@ document.addEventListener('DOMContentLoaded', function() {
                     status.textContent = 'Error sending message. Please try again.';
                 });
         });
+
+        const cursor = document.createElement('div');
+        cursor.id = 'custom-cursor';
+        document.body.appendChild(cursor);
+    
+        // Move cursor with mouse
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.pageX + 'px';
+            cursor.style.top = e.pageY + 'px';
+        });
+    
+        // Change cursor color on hover
+        const hoverElements = document.querySelectorAll('button, a');
+        hoverElements.forEach(element => {
+            element.addEventListener('mouseover', () => {
+                cursor.style.backgroundColor = '#ec0b43'; // Change color on hover
+            });
+            element.addEventListener('mouseout', () => {
+                cursor.style.backgroundColor = '#333'; // Reset to original color
+            });
+        });
+
 }); 
