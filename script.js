@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         projectDiv.innerHTML = `
             <h3>${project.name}</h3>
             <p>${project.description}</p>
-            <a href="${project.link}" target="_blank" class="btn project-btn">View Project</a>
+            <a href="${project.link}" target="_blank" rel="noopener noreferrer" class="btn project-btn">View Project</a>
         `;
         projectList.appendChild(projectDiv);
     });
