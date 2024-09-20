@@ -130,10 +130,14 @@ main {
 
 .about-content {
     display: flex;
-    width: 100%;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center; /* This will center the h2 horizontally */
 }
+
+.about-content h2 {
+    text-align: center;
+}
+
 
 .about-text {
     max-width: 100%;
